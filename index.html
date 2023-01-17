@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bucket List</title>
+    <style>
+      html, body {
+        height: 100%; /* make the html and body elements fill the entire screen */
+      }
+      
+      body {
+        margin: 0; /* remove the default margin */
+        overflow: hidden; /* remove the scrollbar and hide any content that goes beyond the bounds of the body element */
+        background: url("IMG_8096.JPG");
+        background-size: cover; /* fill the entire screen */
+        background-position: 75% center; /* center the background image slightly more to the right*/
+        background-repeat: no-repeat; /* do not repeat the background */
+      }
+      
+      .text-container {
+        width: 100%;
+        display: flex; /* make the div a flex container */
+        align-items: center; /* center the items inside the div horizontally */
+        justify-content: center; /* center the items inside the div vertically */
+      }
+
+      .sample-text-box { /* class for the text box */
+        background-color: rgba(255, 255, 255, 0.5); /* give the box a background color */
+        padding: 10px; /* give the box some padding */
+        border-radius: 5px; /* give the box rounded corners */
+        text-align: center; /* center the text inside the box */
+		opacity: inherit;	
+      }
+	  p,h1 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+      h1 {
+        text-align: center;
+       }
+    </style>
+  </head>
+  <body>
+    <div>      
+		<h1>Bucket List</h1>
+	</div>
+    <div class="text-container">
+      <div class="sample-text-box">
+        <p>This is some sample content.</p>
+      </div>
+    </div>
+  </body>
+</html>
