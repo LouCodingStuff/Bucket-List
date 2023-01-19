@@ -4,60 +4,86 @@
     <title>Bucket List</title>
     <style>
       html, body {
-        height: 100%; /* make the html and body elements fill the entire screen */
+        height: 100%;
       }
       
-      body {
+		body {
         margin: 0; /* remove the default margin */
         overflow: hidden; /* remove the scrollbar and hide any content that goes beyond the bounds of the body element */
         background: url("IMG_8096.JPG");
-        background-size: cover; /* fill the entire screen */
-        background-position: 75% center; /* center the background image slightly more to the right*/
-        background-repeat: no-repeat; /* do not repeat the background */
+        background-size: cover;
+        background-position: 75% center;
+        background-repeat: no-repeat;
       }
       
-      .text-container {
+		.text-container {
         width: 100%;
-        display: flex; /* make the div a flex container */
-        align-items: center; /* center the items inside the div horizontally */
-        justify-content: center; /* center the items inside the div vertically */
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      .sample-text-box { /* class for the text box */
-        background-color: rgba(255, 255, 255, 0.5); /* give the box a background color */
+		.sample-text-box {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+		    opacity: inherit;	
+      }
+		
+		.text {
+  		display: flex;
+  		flex-direction: row;
+		justify-content: right;
+  		align-items: center;
+}
+		.text h1 {
+  		margin-left: 10px;
+		background-color: rgba(255, 255, 255, 0.5); /* give the box a background color */
         padding: 10px; /* give the box some padding */
         border-radius: 5px; /* give the box rounded corners */
         text-align: center; /* center the text inside the box */
 		opacity: inherit;	
-      }
-		
-	   .text {
-  		display: flex;
-  		flex-direction: row;
-		justify-content: center;
-  		align-items: center;
-}
-		.text h1 {
-  margin-left: 10px;
 }
 
-	  p,h1 {
+		p,h1 {
 		font-family: "Comic Sans MS", sans-serif; /* set the font to Comic Sans */
 }
+.text-left {
+  float: left;
+  justify-content: left;
+  align-items: center;
+  width: 50%; /* set the width of the container*/
+  height: 50%; /* set the height of the container */
+}
+
+.text-right {
+  float: right;
+  justify-content: right;
+  align-items: center;
+  width: 50%; /* set the width of the container*/
+  height: 50%; /* set the height of the container */
+}
+
+
+
+	    p,h1 {
+		    font-family: "Comic Sans MS", sans-serif;
+      }
 
       h1 {
         text-align: center;
-       }
-		img {
-  		max-width: 10%;
-		filter: contrast(150%);
-}
+      }
+		  img {
+  		  max-width: 10%;
+		    filter: contrast(150%);
+      }
     </style>
   </head>
   <body>
     <div>      
-		<h1>Website&nbsp;</h1>
-	</div>
+		  <h1>Website</h1>
+	  </div>
     <div class="text-container">
       <div class="sample-text-box">
         <p>This is some sample content.</p>
@@ -65,18 +91,16 @@
     </div>
 	    <div class="container">
       <div>
-        <h1><br></h1>
+<h1 style="margin-top: 50px;"></h1>
       </div>
-      <div class="text">
-		<img src="un-checked-checkbox.png">
-		<h1></h1>
-		<h1>Place Holder Text</h1>
+      <div class="text-left">
+		    <img src="un-checked-checkbox.png">
+			    <h1>Go to antarctica</h1>
       </div>
-	  <div class="text">
-		<img src="un-checked-checkbox.png">
-		<h1></h1>
-		<h1>Place Holder Text</h1>
+	    <div class="text-right">
+			    <h1>Obtain a networth of at least 1 Million</h1>
+					    <img src="un-checked-checkbox.png">
       </div>
-    </div>
+</div>
   </body>
 </html>
