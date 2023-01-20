@@ -1,106 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Bucket List</title>
-    <style>
-      html, body {
-        height: 100%;
-      }
-      
-		body {
-        margin: 0; /* remove the default margin */
-        overflow: hidden; /* remove the scrollbar and hide any content that goes beyond the bounds of the body element */
-        background: url("IMG_8096.JPG");
-        background-size: cover;
-        background-position: 75% center;
-        background-repeat: no-repeat;
-      }
-      
-		.text-container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    <title>Violet Rotten Quelea</title>
+    <meta property="og:title" content="Violet Rotten Quelea" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
       }
 
-		.sample-text-box {
-        background-color: rgba(255, 255, 255, 0.5);
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-		    opacity: inherit;	
-      }
-		
-		.text {
-  		display: flex;
-  		flex-direction: row;
-		justify-content: right;
-  		align-items: center;
-}
-		.text h1 {
-  		margin-left: 10px;
-		background-color: rgba(255, 255, 255, 0.5); /* give the box a background color */
-        padding: 10px; /* give the box some padding */
-        border-radius: 5px; /* give the box rounded corners */
-        text-align: center; /* center the text inside the box */
-		opacity: inherit;	
-}
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
 
-		p,h1 {
-		font-family: "Comic Sans MS", sans-serif; /* set the font to Comic Sans */
-}
-.text-left {
-  float: left;
-  justify-content: left;
-  align-items: center;
-  width: 50%; /* set the width of the container*/
-  height: 50%; /* set the height of the container */
-}
-
-.text-right {
-  float: right;
-  justify-content: right;
-  align-items: center;
-  width: 50%; /* set the width of the container*/
-  height: 50%; /* set the height of the container */
-}
-
-
-
-	    p,h1 {
-		    font-family: "Comic Sans MS", sans-serif;
-      }
-
-      h1 {
-        text-align: center;
-      }
-		  img {
-  		  max-width: 10%;
-		    filter: contrast(150%);
       }
     </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div>      
-		  <h1>Website</h1>
-	  </div>
-    <div class="text-container">
-      <div class="sample-text-box">
-        <p>This is some sample content.</p>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Accordion" class="home-header">
+          <h1 class="home-text">My Bucket List</h1>
+          <div class="home-separator"></div>
+        </header>
+        <header data-role="Accordion" class="home-header1">
+          <div class="home-container1">
+            <img
+              alt="image"
+              src="public/playground_assets/un-checked-checkbox-200h.png"
+              class="home-image"
+            />
+            <span class="home-text1">Obtain A University Degree</span>
+          </div>
+          <div class="home-separator1"></div>
+        </header>
+        <header data-role="Accordion" class="home-header2">
+          <div class="home-container2">
+            <img
+              alt="image"
+              src="public/playground_assets/un-checked-checkbox-200h.png"
+              class="home-image1"
+            />
+            <span class="home-text2">
+              <span>Start A Business</span>
+              <br />
+            </span>
+          </div>
+          <div class="home-separator2"></div>
+        </header>
+        <header data-role="Accordion" class="home-header3">
+          <div class="home-container3">
+            <img
+              alt="image"
+              src="public/playground_assets/un-checked-checkbox-200h.png"
+              class="home-image2"
+            />
+            <span class="home-text5">Travel The World</span>
+          </div>
+          <div class="home-separator3"></div>
+        </header>
+        <header data-role="Accordion" class="home-header4">
+          <div class="home-container4">
+            <img
+              alt="image"
+              src="public/playground_assets/un-checked-checkbox-200h.png"
+              class="home-image3"
+            />
+            <span class="home-text6">Go Bungee Jumping or Sky-Diving</span>
+          </div>
+          <div class="home-separator4"></div>
+        </header>
+        <header data-role="Accordion" class="home-header5">
+          <div class="home-container5">
+            <img
+              alt="image"
+              src="public/playground_assets/un-checked-checkbox-200h.png"
+              class="home-image4"
+            />
+            <span class="home-text7">Go To Anarctica</span>
+          </div>
+          <div class="home-separator5"></div>
+        </header>
+        <header data-role="Accordion" class="home-header6">
+          <div class="home-container6">
+            <img
+              alt="image"
+              src="public/playground_assets/un-checked-checkbox-200h.png"
+              class="home-image5"
+            />
+            <span class="home-text8">Obtain A Net Worth Of 1 Million</span>
+          </div>
+          <div class="home-separator6"></div>
+        </header>
       </div>
     </div>
-	    <div class="container">
-      <div>
-<h1 style="margin-top: 50px;"></h1>
-      </div>
-      <div class="text-left">
-		    <img src="un-checked-checkbox.png">
-			    <h1>Go to antarctica</h1>
-      </div>
-	    <div class="text-right">
-			    <h1>Obtain a networth of at least 1 Million</h1>
-					    <img src="un-checked-checkbox.png">
-      </div>
-</div>
+    <script
+      data-section-id="header"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
